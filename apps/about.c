@@ -85,7 +85,7 @@ static void redraw(void) {
 }
 
 static void init_default(void) {
-	title_str = "About ToaruOS";
+	title_str = "About HobaOS";
 	icon_path = "/usr/share/logo_login.png";
 
 	{
@@ -96,16 +96,16 @@ static void init_default(void) {
 		if (tmp) {
 			*tmp = '\0';
 		}
-		sprintf(version_str, "ToaruOS %s", u.release);
+		sprintf(version_str, "HobaOS %s", u.release);
 	}
 
 	copyright_str[0] = "© 2011-2025 K. Lange, et al.";
 	copyright_str[1] = "-";
-	copyright_str[2] = "ToaruOS is free software released under the";
+	copyright_str[2] = "HobaOS is free software released under the";
 	copyright_str[3] = "NCSA/University of Illinois license.";
 	copyright_str[4] = "-";
 	copyright_str[5] = "%https://toaruos.org";
-	copyright_str[6] = "%https://github.com/klange/toaruos";
+	copyright_str[6] = "%https://github.com/onuregesimsek375-androidlab/HobaOS";
 }
 
 void resize_finish(int w, int h) {
