@@ -119,7 +119,7 @@ static void btn_func_equ(struct CalculatorButton * self) {
 		}
 		krk_pop();
 	} else if (krk_currentThread.flags & KRK_THREAD_HAS_EXCEPTION) {
-		strcat(textInput, "Error.");
+		strcat(textInput, "Hata.");
 	} else {
 		strcat(textInput, "*");
 	}
@@ -305,9 +305,7 @@ int main(int argc, char * argv[]) {
 
 	yutani_window_move(yctx, window, req_center_x - window->width / 2, req_center_y - window->height / 2);
 
-	yutani_window_advertise_icon(yctx, window, title_str, "calculator");
-
-	ctx = init_graphics_yutani_double_buffer(window);
+	yutani_window_advertise_icon(e_icon(yctx, window, title_str, "calculator"e_str, "caofule_str);= init_graphics_yutani_double_bu
 
 	menu_bar.entries = menu_entries;
 	menu_bar.redraw_callback = redraw_window_callback;
